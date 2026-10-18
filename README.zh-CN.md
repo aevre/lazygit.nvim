@@ -86,7 +86,3 @@ lazygit.log_file(opts?)
 - `open()` 在终端窗口中启动 LazyGit。
 - `log()` 打开仓库日志视图。
 - `log_file()` 打开当前文件的日志，并将文件所在目录作为工作目录。
-
-## 迁移
-
-原来的 `Builtin.lazygit` 模块会转发到 `require("lazygit")`。安装独立插件后，已有调用仍然兼容；新的集成应直接 require `lazygit`。

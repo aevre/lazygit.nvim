@@ -86,7 +86,3 @@ lazygit.log_file(opts?)
 - `open()` starts LazyGit in a terminal window.
 - `log()` opens the repository log view.
 - `log_file()` opens the log for the current file and uses its directory as the working directory.
-
-## Migration
-
-The former configuration module `Builtin.lazygit` forwards to `require("lazygit")`. Existing calls continue to work when the standalone plugin is installed; new integrations should require `lazygit` directly.
