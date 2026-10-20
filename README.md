@@ -86,3 +86,7 @@ lazygit.log_file(opts?)
 - `open()` starts LazyGit in a terminal window.
 - `log()` opens the repository log view.
 - `log_file()` opens the log for the current file and uses its directory as the working directory.
+
+## Development
+
+Run `make check` from the repository root. The guarded `plugin/lazygit.lua` entrypoint only applies defaults; integration logic stays under `lua/lazygit/`. Keep `setup()` safe when a plugin manager calls it again with user options.

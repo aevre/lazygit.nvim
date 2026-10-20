@@ -86,3 +86,7 @@ lazygit.log_file(opts?)
 - `open()` 在终端窗口中启动 LazyGit。
 - `log()` 打开仓库日志视图。
 - `log_file()` 打开当前文件的日志，并将文件所在目录作为工作目录。
+
+## 开发
+
+在仓库根目录运行 `make check`。带 guard 的 `plugin/lazygit.lua` 入口只应用默认配置，集成逻辑保留在 `lua/lazygit/`。插件管理器随后以用户选项再次调用 `setup()` 时必须保持安全。
