@@ -1,6 +1,6 @@
 # lazygit.nvim
 
-A standalone LazyGit integration for Neovim, built on [terminal.nvim](https://codeberg.org/aevre/terminal.nvim).
+A standalone LazyGit integration for Neovim, built on [terminal.nvim](https://github.com/aevre/terminal.nvim).
 
 [简体中文](README.zh-CN.md)
 
@@ -8,19 +8,19 @@ A standalone LazyGit integration for Neovim, built on [terminal.nvim](https://co
 
 - Neovim 0.10 or newer.
 - [LazyGit](https://github.com/jesseduffield/lazygit) installed and available in `$PATH`.
-- [terminal.nvim](https://codeberg.org/aevre/terminal.nvim), which provides [win.nvim](https://codeberg.org/aevre/win.nvim).
+- [terminal.nvim](https://github.com/aevre/terminal.nvim), which provides [win.nvim](https://github.com/aevre/win.nvim).
 
 ## Installation
 
-The canonical repository is hosted on Codeberg: <https://codeberg.org/aevre/lazygit.nvim>.
+Available on Codeberg: <https://codeberg.org/aevre/lazygit.nvim> and GitHub: <https://github.com/aevre/lazygit.nvim>.
 
 With lazy.nvim:
 
 ```lua
 {
-  "https://codeberg.org/aevre/lazygit.nvim",
+  "https://github.com/aevre/lazygit.nvim",
   dependencies = {
-    "https://codeberg.org/aevre/terminal.nvim",
+    "https://github.com/aevre/terminal.nvim",
   },
   opts = {},
 }
