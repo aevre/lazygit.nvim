@@ -89,4 +89,4 @@ lazygit.log_file(opts?)
 
 ## Development
 
-Run `make check` from the repository root. The guarded `plugin/lazygit.lua` entrypoint only applies defaults; integration logic stays under `lua/lazygit/`. Keep `setup()` safe when a plugin manager calls it again with user options.
+Run `make check` from the repository root. This runs formatting checks, Selene, and the headless regression suite. The guarded `plugin/lazygit.lua` entrypoint only applies defaults; integration logic stays under `lua/lazygit/`. Keep `setup()` safe when a plugin manager calls it again with user options.

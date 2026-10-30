@@ -89,4 +89,4 @@ lazygit.log_file(opts?)
 
 ## 开发
 
-在仓库根目录运行 `make check`。带 guard 的 `plugin/lazygit.lua` 入口只应用默认配置，集成逻辑保留在 `lua/lazygit/`。插件管理器随后以用户选项再次调用 `setup()` 时必须保持安全。
+在仓库根目录运行 `make check`。该命令会运行格式检查、Selene 和 headless 回归测试。带 guard 的 `plugin/lazygit.lua` 入口只应用默认配置，集成逻辑保留在 `lua/lazygit/`。插件管理器随后以用户选项再次调用 `setup()` 时必须保持安全。
